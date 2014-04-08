@@ -1,0 +1,16 @@
+{
+  "name": "js-digits",
+  "version": "0.0.1",
+  "description": "Js digits method",
+  "main": "js/app.js",
+  "keywords": [
+    "js"
+  ],
+  "author": "Milos Janjic",
+  "license": "MIT",
+  "devDependencies": {
+    "karma": "~0.12.4",
+    "karma-jasmine": "~0.1.5",
+    "karma-phantomjs-launcher": "~0.1.4"
+  }
+}
