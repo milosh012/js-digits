@@ -30,25 +30,25 @@ describe("Parse telephone number", function() {
     expect(result).toEqual('zero one two three four five six seven eight nine');
   });
 
-  it("should parse telephone number into groups (each number different)", function() {
+  it("should parse telephone number into one group (all numbers are the same)", function() {
     var result = parseNumber([1,1,1,1,1,1,1,1,1,1], [15]);
 
     expect(result).toEqual('decuple one');
   });
 
-  it("should parse telephone number into groups (each number different)", function() {
+  it("should parse telephone number into one group (size for this lenght does not exist)", function() {
     var result = parseNumber([1,1,1,1,1,1,1,1,1,1,1], [15]);
 
     expect(result).toEqual('one');
   });
 
-  it("should parse telephone number into groups (each number different)", function() {
+  it("should not parse telephone number because no arguments are passed", function() {
     var result = parseNumber();
 
     expect(result).toEqual('');
   });
 
-  it("should parse telephone number into groups (each number different)", function() {
+  it("should parse telephone number (without groups)", function() {
     var result = parseNumber([0,1,2,3,4,5,6,7,8,9]);
 
     expect(result).toEqual('zero one two three four five six seven eight nine');
